@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     android:layout_margin="5dp">
 
+    <!--android:background="@drawable/bg_parent_bottom_line"-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -14,7 +15,7 @@
         android:layout_marginLeft="@dimen/feed_item_margin"
         android:layout_marginRight="@dimen/feed_item_margin"
         android:layout_marginTop="@dimen/feed_item_margin"
-        android:background="@drawable/bg_parent_bottom_line"
+
         android:orientation="vertical"
         android:fillViewport="true"
         android:paddingBottom="@dimen/feed_item_padding_top_bottom"
@@ -27,12 +28,12 @@
             android:paddingLeft="@dimen/feed_item_padding_left_right"
             android:paddingRight="@dimen/feed_item_padding_left_right" >
 
-            <com.android.volley.toolbox.NetworkImageView
+            <com.giologic.pedrosystem10.ScaleImageView
                 android:id="@+id/iv_org_logo"
                 android:layout_width="@dimen/feed_item_profile_pic"
                 android:layout_height="@dimen/feed_item_profile_pic"
                 android:scaleType="fitCenter" >
-            </com.android.volley.toolbox.NetworkImageView>
+            </com.giologic.pedrosystem10.ScaleImageView>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -78,10 +79,10 @@
             android:textColorLink="@color/link" />
 
         <!--android:background="@drawable/image_padding"-->
-        <ImageView
+        <com.giologic.pedrosystem10.ScaleImageView
             android:id="@+id/iv_pub"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:scaleType="fitXY"
             android:layout_margin="5dp"/>
     </LinearLayout>
